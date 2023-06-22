@@ -2,20 +2,28 @@
   "name": "dashboard",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://nm-apps/M7Dashboard/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.26.1",
+    "chart.js": "^3.7.1",
+    "chartjs-plugin-annotation": "^1.4.0",
     "react": "^18.0.0",
+    "react-chartjs-2": "^3.0.4",
     "react-dom": "^18.0.0",
+    "react-router-dom": "^5.3.0",
     "react-scripts": "5.0.1",
+    "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "copyfiles -u 1 build/*.* build/static/js/*.* //nm-apps/c$/inetpub/wwwroot/M7Dashboard/"
   },
   "eslintConfig": {
     "extends": [
